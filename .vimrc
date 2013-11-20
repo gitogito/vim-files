@@ -28,10 +28,12 @@ let g:DrChipTopLvlMenu = ''     " remove 'DrChip' menu
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 nnoremap <C-j> <C-^>
+noremap <Space> @@
 
 autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd Filetype ocp-indent compiler ocaml
 autocmd Filetype awk setlocal shiftwidth=4 expandtab
+autocmd Filetype python setlocal shiftwidth=4 expandtab
 autocmd BufRead,BufNewFile *.ino set filetype=cpp
 
 " go to the last position
