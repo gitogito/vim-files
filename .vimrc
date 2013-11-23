@@ -1,5 +1,6 @@
 set nocompatible
-
+set cpoptions&
+set cpoptions+=$
 set hidden
 set nobackup
 set shortmess&
