@@ -22,6 +22,10 @@ set nrformats-=octal
 set diffopt&
 set diffopt+=iwhite
 set ambiwidth=double
+set fileencoding=utf-8
+set fileencodings&
+set fileencodings+=cp932,sjis,euc-jp
+set mouse=a
 
 " Align
 let g:Align_xstrlen = 3         " for japanese string
