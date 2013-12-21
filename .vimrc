@@ -24,7 +24,7 @@ set diffopt+=iwhite
 set ambiwidth=double
 set fileencoding=utf-8
 set fileencodings&
-set fileencodings+=cp932,sjis,euc-jp
+set fileencodings+=utf-8,cp932,sjis,euc-jp
 set mouse=a
 
 " Align
