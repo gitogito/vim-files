@@ -34,6 +34,8 @@ let g:DrChipTopLvlMenu = ''     " remove 'DrChip' menu
 nnoremap <ESC><ESC> :nohlsearch<CR>
 nnoremap <C-j> <C-^>
 noremap <Space> @@
+noremap + <C-W>+
+noremap - <C-W>-
 
 autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd Filetype ocp-indent compiler ocaml
