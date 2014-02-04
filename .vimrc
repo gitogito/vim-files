@@ -25,7 +25,6 @@ set ambiwidth=double
 set fileencoding=utf-8
 set fileencodings&
 set fileencodings+=utf-8,cp932,sjis,euc-jp
-set mouse=a
 
 " Align
 let g:Align_xstrlen = 3         " for japanese string
@@ -41,6 +40,7 @@ autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd Filetype ocp-indent compiler ocaml
 autocmd Filetype awk setlocal shiftwidth=4 expandtab
 autocmd Filetype python setlocal shiftwidth=4 expandtab
+autocmd Filetype ruby setlocal shiftwidth=4 expandtab
 autocmd BufRead,BufNewFile *.ino set filetype=cpp
 
 " go to the last position
