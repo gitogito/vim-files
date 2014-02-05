@@ -35,6 +35,7 @@ nnoremap <C-j> <C-^>
 noremap <Space> @@
 noremap + <C-W>+
 noremap - <C-W>-
+noremap g/ :Migemo<CR>
 
 autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd Filetype ocp-indent compiler ocaml
