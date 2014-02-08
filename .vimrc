@@ -41,7 +41,7 @@ autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd Filetype ocp-indent compiler ocaml
 autocmd Filetype awk setlocal shiftwidth=4 expandtab
 autocmd Filetype python setlocal shiftwidth=4 expandtab
-autocmd Filetype ruby setlocal shiftwidth=4 expandtab
+autocmd Filetype ruby setlocal shiftwidth=2 expandtab
 autocmd BufRead,BufNewFile *.ino set filetype=cpp
 
 " go to the last position
