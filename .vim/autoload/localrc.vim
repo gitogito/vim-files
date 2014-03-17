@@ -27,6 +27,9 @@ function! localrc#search(fnames, ...)
   let dir = fnamemodify(path, ':p:h')
   let updir = ''
   while depth != 0 && dir !=# updir
+    if dir == "/" || dir == "//"
+      break
+    endif
     let targets = s:match_files(dir, a:fnames) + targets
     let updir = dir
     let dir = fnamemodify(dir, ':h')
