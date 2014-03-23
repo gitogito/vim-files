@@ -47,6 +47,8 @@ autocmd BufRead,BufNewFile *.ino set filetype=cpp
 " go to the last position
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
+let g:the_ocamlspot_disable_auto_type = 1
+
 filetype plugin indent on
 
 if &t_Co > 2 || has("gui_running")
