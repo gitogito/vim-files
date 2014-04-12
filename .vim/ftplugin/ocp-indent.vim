@@ -13,6 +13,6 @@ endfunction
 vnoremap <buffer> * :call InsertOCamlComment()<CR>
 
 function! OCamlType()
-  echo system("ocamlannot " . bufname('%') . " " . (line2byte(line('.'))+col('.')-1))
+  echo system("ocamlannot " . bufname('%') . " " . (line2byte(line('.'))-1 + col('.')-1))
 endfunction
 map <buffer> ga :call OCamlType()<return>
