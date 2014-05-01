@@ -31,7 +31,6 @@ let g:Align_xstrlen = 3         " for japanese string
 let g:DrChipTopLvlMenu = ''     " remove 'DrChip' menu
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
-nnoremap <C-j> <C-^>
 noremap <Space> @@
 noremap + <C-W>+
 noremap - <C-W>-
