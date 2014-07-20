@@ -37,6 +37,7 @@ noremap - <C-W>-
 noremap g/ :Migemo<CR>
 
 autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd Filetype ocp-indent compiler ocaml
 autocmd Filetype awk setlocal shiftwidth=4 expandtab
 autocmd Filetype python setlocal shiftwidth=4 expandtab
