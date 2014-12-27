@@ -25,6 +25,10 @@ set ambiwidth=double
 set fileencoding=utf-8
 set fileencodings&
 set fileencodings+=utf-8,cp932,sjis,euc-jp
+set showmatch
+set matchtime=1
+
+let loaded_matchparen = 1
 
 " Align
 let g:Align_xstrlen = 3         " for japanese string
@@ -35,6 +39,7 @@ noremap <Space> @@
 noremap + <C-W>+
 noremap - <C-W>-
 noremap g/ :Migemo<CR>
+nnoremap Y y$
 
 autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd BufRead,BufNewFile *.md set filetype=markdown
