@@ -1,4 +1,4 @@
-set nocompatible
+"set nocompatible
 set cpoptions&
 set cpoptions+=$
 set hidden
