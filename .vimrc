@@ -27,6 +27,8 @@ set fileencodings&
 set fileencodings+=utf-8,cp932,sjis,euc-jp
 set showmatch
 set matchtime=1
+set undofile
+set undodir=$HOME/var/vim/undo
 
 let loaded_matchparen = 1
 
