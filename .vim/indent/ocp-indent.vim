@@ -30,9 +30,10 @@ function! GetOcpIndent()
     " currentline has only spaces
     call add(l, "aaa")
   endif
+  call add(l, getline(v:lnum + 1))
   let s = join(l, "\n")
   let s = system("ocp-indent --numeric ", s)
-  let n = system("tail -1 ", s)
+  let n = system("tail -2 | head -1 ", s)
   redraw!
   return n
 endfunction
