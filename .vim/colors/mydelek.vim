@@ -33,12 +33,16 @@ hi PmenuSel   ctermfg=White	   ctermbg=DarkBlue  guifg=White  guibg=DarkBlue
 hi Question   ctermfg=DarkGreen    gui=bold guifg=SeaGreen
 "hi Search     ctermfg=NONE	   ctermbg=Yellow guibg=Yellow guifg=NONE
 "hi Search     ctermfg=White	   ctermbg=Black guibg=Yellow guifg=NONE
-hi Search     cterm=bold           gui=bold
+"hi Search     cterm=bold           gui=bold
+"hi Search	guifg=#90fff0 guibg=#2050d0     cterm=bold ctermfg=Blue ctermbg=none cterm=underline term=underline
+"hi Search	guifg=#90fff0 guibg=#2050d0     cterm=bold ctermfg=Black ctermbg=LightCyan
 hi SpecialKey ctermfg=DarkBlue	   guifg=Blue
 "hi StatusLine cterm=bold	   ctermbg=blue ctermfg=yellow guibg=gold guifg=blue
-hi StatusLine cterm=bold	   ctermbg=white ctermfg=lightblue guibg=gold guifg=blue
+"hi StatusLine cterm=bold	   ctermbg=white ctermfg=lightblue guibg=gold guifg=blue
 "hi StatusLineNC	cterm=bold	   ctermbg=blue ctermfg=white  guibg=gold guifg=blue
-hi StatusLineNC	cterm=bold	   ctermbg=white ctermfg=darkblue  guibg=gold guifg=blue
+"hi StatusLineNC	cterm=bold	   ctermbg=white ctermfg=darkblue  guibg=gold guifg=blue
+hi StatusLine	  term=bold,reverse  cterm=bold ctermfg=lightblue ctermbg=white gui=bold guifg=blue guibg=white
+hi StatusLineNC   term=reverse	ctermfg=white ctermbg=lightblue guifg=white guibg=blue
 hi Title      ctermfg=DarkMagenta  gui=bold guifg=Magenta
 hi VertSplit  cterm=reverse	   gui=reverse
 hi Visual     ctermbg=NONE	   cterm=reverse gui=reverse guifg=Grey guibg=fg
