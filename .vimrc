@@ -29,6 +29,8 @@ set showmatch
 set matchtime=1
 set undofile
 set undodir=$HOME/var/vim/undo
+set backspace=eol,indent
+set autoindent
 
 let loaded_matchparen = 1
 
