@@ -31,6 +31,7 @@ set undofile
 set undodir=$HOME/var/vim/undo
 set backspace=eol,indent
 set autoindent
+set number
 
 let loaded_matchparen = 1
 
@@ -40,10 +41,14 @@ let g:DrChipTopLvlMenu = ''     " remove 'DrChip' menu
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 noremap <Space> @@
-noremap + <C-W>+
-noremap - <C-W>-
 noremap g/ :Migemo<CR>
 nnoremap Y y$
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+nnoremap <Down> gj
+nnoremap <Up> gk
 
 autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocp-indent
 autocmd BufRead,BufNewFile *.md set filetype=markdown
