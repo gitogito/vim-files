@@ -32,6 +32,8 @@ set undodir=$HOME/var/vim/undo
 set backspace=eol,indent
 set autoindent
 set number
+set formatoptions&
+set formatoptions+=M
 
 let loaded_matchparen = 1
 
