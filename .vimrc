@@ -41,6 +41,17 @@ let loaded_matchparen = 1
 let g:Align_xstrlen = 3         " for japanese string
 let g:DrChipTopLvlMenu = ''     " remove 'DrChip' menu
 
+filetype plugin indent on
+
+if &t_Co > 2 || has("gui_running")
+    syntax on
+    colorscheme mydelek
+endif
+
+" merlin
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
 nnoremap <ESC><ESC> :nohlsearch<CR>
 noremap <Space> @@
 noremap g/ :Migemo<CR>
@@ -64,10 +75,3 @@ autocmd BufRead,BufNewFile *.ino set filetype=cpp
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 let g:the_ocamlspot_disable_auto_type = 1
-
-filetype plugin indent on
-
-if &t_Co > 2 || has("gui_running")
-    syntax on
-    colorscheme mydelek
-endif
