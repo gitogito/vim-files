@@ -34,6 +34,8 @@ set autoindent
 set number
 set formatoptions&
 set formatoptions+=M
+set cino+=:0
+set modeline
 
 let loaded_matchparen = 1
 
