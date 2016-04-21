@@ -18,6 +18,7 @@ set nowrapscan
 set hlsearch
 set scrolloff=2
 set lazyredraw
+set nrformats&
 set nrformats-=octal
 set diffopt&
 set diffopt+=iwhite
